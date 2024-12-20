@@ -134,10 +134,10 @@ In Python, a variable is used to store data or information that can be reference
 
 ## Rules
 
-a. Must begin with a letter (a-z, A-Z) or an underscore (\_).
-b. Subsequent characters can include letters, numbers (0-9), or underscores.
-c. Cannot be a reserved keyword (e.g., if, for, while, etc.).
-d. Case-sensitive: myVariable and myvariable are different.
+- Must begin with a letter (a-z, A-Z) or an underscore (\_).
+- Subsequent characters can include letters, numbers (0-9), or underscores.
+- Cannot be a reserved keyword (e.g., if, for, while, etc.).
+- Case-sensitive: myVariable and myvariable are different.
 
 <!-- Value Assign -->
 
@@ -176,8 +176,8 @@ print(type(name)) # Output: <class 'str'>
 
 ## Variable Scope
 
-a. Global Variable: Declared outside of functions and accessible globally.
-b. Local Variable: Declared inside a function and only accessible within that function.
+- Global Variable: Declared outside of functions and accessible globally.
+- Local Variable: Declared inside a function and only accessible within that function.
 
 # Example
 
