@@ -14,6 +14,16 @@
             <li><a href="#best-practices-for-comments">Best Practices for Comments</a></li>
         </ul>
     </li>
+    <li>
+      <a href="#variables">Variables</a>
+      <ul>
+            <li><a href="#rules">Rules for Naming Variables</a></li>
+            <li><a href="#value-assign">Assigning Values to Variables</a></li>
+            <li><a href="#multiple-assignment">Multiple Assignment</a></li>
+            <li><a href="#checking-types">Checking Variable Types</a></li>
+            <li><a href="#variable-scope">Variable Scope</a></li>
+        </ul>
+    </li>
   </ol>
 </details>
 
@@ -112,4 +122,72 @@ length = 10  # Length of the rectangle
 width = 5    # Width of the rectangle
 area = length * width  # Area formula: length * width
 print(area)
+```
+
+<!-- Variables -->
+
+## Variables
+
+In Python, a variable is used to store data or information that can be referenced and manipulated later in the program. Python variables are created when you assign a value to them, and they do not require explicit declaration of their data type—Python infers the type based on the value assigned.
+
+<!-- Rules -->
+
+## Rules
+
+a. Must begin with a letter (a-z, A-Z) or an underscore (\_).
+b. Subsequent characters can include letters, numbers (0-9), or underscores.
+c. Cannot be a reserved keyword (e.g., if, for, while, etc.).
+d. Case-sensitive: myVariable and myvariable are different.
+
+<!-- Value Assign -->
+
+## Value Assign
+
+```sh
+# Example of variable assignments
+x = 10        # Integer
+name = "John" # String
+pi = 3.14     # Float
+is_valid = True # Boolean
+```
+
+<!-- Multiple Assignment -->
+
+## Multiple Assignment
+
+```sh
+# Assigning the same value to multiple variables
+a = b = c = 5
+
+# Assigning different values to multiple variables in one line
+x, y, z = 1, 2, "Hello"
+```
+
+<!-- Checking Types -->
+
+## Checking Types
+
+```sh
+print(type(x))    # Output: <class 'int'>
+print(type(name)) # Output: <class 'str'>
+```
+
+<!-- Variable Scope -->
+
+## Variable Scope
+
+a. Global Variable: Declared outside of functions and accessible globally.
+b. Local Variable: Declared inside a function and only accessible within that function.
+
+# Example
+
+```sh
+x = "global"
+
+def my_function():
+    x = "local"  # Local variable
+    print(x)     # Prints "local"
+
+my_function()
+print(x)         # Prints "global"
 ```
